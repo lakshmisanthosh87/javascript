@@ -76,11 +76,17 @@ r
 
 function form(event){
      event.preventDefault()
-     let value=document.getElementById("name").value;
+     let value=document.getElementById("name1").value;
+     console.log(value);
     //  let value1=document.getElementById("container")    
     // value1.innerHTML+=`<h1> your name is ${value}`
-    alert("your name is ${value}")
+//     alert("your name is ${value}")
+//      prompt("enter your name","hi")
+      
+
 }
-     let valuess= prompt("enter your name","hi")
 
-
+function update(){
+     let value="hello";
+     localStorage.setItem("name",value);
+}
